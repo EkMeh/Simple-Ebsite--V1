@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+
+*{
+   margin: 0; padding: 0;
+   text-decoration: 0; box-sizing: border-box;
+   list-style: none; color: white; 
+}
+
+.container
+{
+    background: url('../src/bg.jpg');
+    height: 100vh;background-size: 100% 100%; 
+}
+
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    background: rgba(22, 112, 214, 0.4);
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar ul li
+{
+    display: inline-block;
+    margin: 0 8px;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 1.7rem;
+    position: relative;
+}
+
+.logo
+{
+    text-transform: uppercase;
+    font-size: 3rem; font-weight: 600;
+    letter-spacing: .5rem;
+}
+
+.navbar ul li a
+{
+    border-radius: 4px;
+    padding: .3rem .8rem;
+}
+
+.navbar ul li a.active
+{
+    background: #ff6e00;
+    border-radius: 4px;
+    padding: .3rem .8rem;
+}
+
+.usersIcon i
+{
+    font-size: 1.7rem;
+    color: #ff6e00;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.usersIcon i:hover
+{
+    color: white;
+}
+
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+.center h1
+{
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px; text-transform: capitalize;
+    text-align: center;
+}
+
+.center h2
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px; margin-top: 10px;
+    text-align: center; text-transform: uppercase;
+}
+
+.center .buttons
+{
+    margin: 35px 280px;
+}
+
+.buttons button
+{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bolder;
+    color:white;
+    background: rgb(207, 96, 88);
+    border: 1px solid rgb(207, 96, 88);
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.buttons button:hover
+{
+    background: #fff;
+    border: none;
+    color: #ffb3b3;
+}
+
+.navbar ul li a:hover
+{
+    background: #ff6e00;
+    border-radius: 4px;
+}
+
+
+/* RegBox style starts  */
+
+.RegBox
+{
+    background: #154360; width: 100%; position: absolute;
+    display: flex;flex-direction: column; justify-content: center;
+    justify-items: center; align-items: center;
+    margin-top: 100px; box-shadow: 0 5px 12px rgba(21, 67, 96, 0.8);
+    width: 400px;height: auto;
+    top: -2.6%; right: 3%; visibility: hidden; 
+}
+
+.RegBox .BoxTitle
+{
+    text-transform: capitalize;
+    margin: 20px; color: aliceblue;
+    letter-spacing: 3px;
+}
+
+.RegBox .BoxTitle i
+{
+    position: absolute;
+    right: 2%; top: 2%;
+    font-size: 1.5rem; cursor: pointer;
+}
+
+.RegBox form
+{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.RegBox form .inputBox
+{
+    width: 100%;
+    display: flex; flex-direction: column;
+    justify-content: center;justify-items: start;
+    align-items: center;
+}
+
+.RegBox form .inputBox input
+{
+    width: 90%;
+    height: 35px;
+    border: 1px solid #154360;
+    border-radius: 5px;
+    outline: none; padding: .4rem;
+    z-index: 10;
+}
+
+.RegBox form .inputBox input::placeholder
+{
+    text-transform: capitalize;
+    margin-left: 1rem; z-index: 100;
+}
+
+.RegBox form .inputBox i
+{
+    position: absolute; margin-bottom: 31px;
+    font-size: 25px; margin-left: 20rem; visibility: hidden;
+    z-index: 10;
+
+}
+
+.RegBox form .inputBox .sl
+{
+    color: #27AE60;
+    z-index: 10;
+
+}
+
+.RegBox form .inputBox .ls
+{
+    color: #E74C3C;
+    z-index: 10;
+
+}
+
+
+.RegBox form .inputBox p
+{
+    color: red;margin-top:.3rem; margin-bottom: .3rem;width: 90%;
+    font-size: 14px; visibility: hidden;
+}
+
+.RegBox form .termsBox 
+{
+    width: 90%;
+    margin: 15px 0;
+}
+
+.RegBox form .termsBox .terms
+{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.RegBox form .termsBox .terms input
+{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.RegBox form .termsBox .terms p
+{
+    color: white; font-size: 12px;
+}
+
+.RegBox form .termsBox .terms p span
+{
+    color:red; cursor: pointer; text-decoration: underline;
+}
+
+.RegBox .FormBox button
+{
+    background: #27AE60;
+    border: none; margin-left: 210px; margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.RegBox .FormBox button:hover
+{
+    opacity: 0.8;
+}
+
+/* RegBox style ends  */

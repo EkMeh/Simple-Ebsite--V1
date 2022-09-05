@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple WewSite - Home</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="../css/sytle.css">
+    <!-- fontawesome icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="navbar" id="navbar">
+            <div class="logo" id="logo">
+                <a href="#">logo</a>
+            </div>
+            <ul>
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+            <div class="usersIcon" id="userIcon">
+                <i class="fa-solid fa-user" id="openReg"></i>
+                <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+        </div>
+        <div class="center" id="center">
+            <h1>simple web site</h1>
+            <h2>welcome to "Website Name"</h2>
+            <div class="buttons" id="butons">
+                <button>more</button>
+                <button>subscribe</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- RegBox section start -->
+     <section class="RegBox" id="RegBox">
+        <div class="BoxTitle" id="BoxTitle">
+            <h2>create account</h2>
+            <i class="fa-solid fa-xmark-circle" id="closeReg"></i>
+        </div>
+        <div class="FormBox" id="FormBox">
+            <form action="" id="form">
+                <!-- //1 -->
+                <div class="inputBox" id="inputBox">
+                    <input type="text" name="" id="firstname" placeholder="first name">
+                    <i class="fa-solid fa-circle-check sl" id="i1"></i>
+                    <i class="fa-solid fa-circle-exclamation ls" id="i5"></i>
+                    <p id="mesError1">*Firstname cannot be blank</p>
+                </div>
+                <!-- //2 -->
+                <div class="inputBox" id="inputBox">
+                    <input type="text" name="" id="lastname" placeholder="last name">
+                    <i class="fa-solid fa-circle-check sl" id="i2"></i>
+                    <i class="fa-solid fa-circle-exclamation ls" id="i6"></i>
+                    <p id="mesError2">error message</p>
+                </div>
+                <!-- //3 -->
+                <div class="inputBox" id="inputBox">
+                    <input type="email" name="" id="email" placeholder="email">
+                    <i class="fa-solid fa-circle-check sl" id="i3"></i>
+                    <i class="fa-solid fa-circle-exclamation ls" id="i7"></i>
+                    <p id="mesError3">error message</p>
+                </div>
+                <!-- //4 -->
+                <div class="inputBox" id="inputBox">
+                    <input type="password" name="" id="password" placeholder="password">
+                    <i class="fa-solid fa-circle-check sl" id="i4"></i>
+                    <i class="fa-solid fa-circle-exclamation ls" id="i8"></i>
+                    <p id="mesError4">error message</p>
+                </div>
+                <!-- //5 -->
+                <div class="termsBox" id="termsBox">
+                    <div class="terms" id="terms">
+                        <input type="checkbox" name="" id="trems1">
+                        <p id="p1">Lorem ipsum dolor <span>Lorem, ipsum dolor.</span> adipisicing elit. Nulla sequi, earum cumque ipsa animi consequuntur.</p>
+                    </div>
+                    <div class="terms" id="terms">
+                        <input type="checkbox" name="" id="trems2">
+                        <p id="p2">Lorem ipsum dolor <span>Lorem, ipsum dolor.</span> adipisicing elit. Nulla sequi, earum cumque ipsa animi consequuntur.</p>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" id="btn">register</button>
+        </div>
+    </section>
+    <!-- RegBox section end -->
+
+    <!-- link JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
